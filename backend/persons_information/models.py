@@ -50,7 +50,7 @@ class Document(models.Model):
 
     type = models.CharField(max_length=30, choices=TYPE, default='PASSPORT', verbose_name='Тип')
     scan_document = models.FileField(
-        upload_to='documents',
+        upload_to='scans',
         null=True,
         blank=True,
         verbose_name='Скан документа'
